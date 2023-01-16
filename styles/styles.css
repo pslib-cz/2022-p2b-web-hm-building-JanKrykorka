@@ -1,5 +1,53 @@
 :root{
-    --var: 
-    
+ --background_white: #F5F5F5; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family:'Open Sans'
+}
+.navbar{
+    display: flex;
+    margin: 24px 20px auto 20px;
+    background-color: aqua; /* aqua abych dokázal rozeznat co je co bez kostantního používání devtools*/  
+    justify-content: space-between;
+}
+
+.img__logo{
+    height: 44px;
+    margin-left: -18px;
+    display: flex;
+    align-self: center;
 
 }
+
+.menu{
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu > li{
+    display: flex;
+    margin: 0 .8rem;
+}
+
+.hamburber-menu-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+
