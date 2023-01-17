@@ -1,5 +1,6 @@
 :root{
  --background_white: #F5F5F5; 
+ --span_orange: #EB6C27;
 }
 
 body{
@@ -7,17 +8,34 @@ body{
     padding: 0;
 }
 
-html{
-    font-family:'Open Sans'
-}
-.navbar{
-    display: flex;
-    margin: 24px 20px auto 20px;
-    background-color: aqua; /* aqua abych dokázal rozeznat co je co bez kostantního používání devtools*/  
-    justify-content: space-between;
+h1,h2{
+    padding: 0;
+    margin: 0;
 }
 
-.img__logo{
+@font-face {
+    font-family: Open-Sans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+html{
+    font-family: Open-Sans;
+}
+
+.page{
+    background-color: var(--background_white);
+}
+
+.page-nav{
+    display: flex;
+    margin: 24px 20px 36.5px 20px;
+    background-color: var(--background_white);    /* aqua abych dokázal rozeznat co je co bez kostantního používání devtools*/  
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-logo{
     height: 44px;
     margin-left: -18px;
     display: flex;
@@ -26,9 +44,10 @@ html{
 }
 
 .menu{
-    display:flex;
+    display:none;
     flex-direction: row;
     list-style-type: none;
+    
 }
 
 .menu > li{
@@ -36,18 +55,71 @@ html{
     margin: 0 .8rem;
 }
 
-.hamburber-menu-container {
-    display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
+.page-header{
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top:179px;
+    padding-bottom:20px;
+    background-image:url(../media/pageheader-1920w.jpg);
+    background-position: center;
+    background-size:auto 150%;
+    background-repeat: no-repeat;
+    padding-left: -20px;
+    padding-right:-20px ;
+    margin-bottom: 55px;
+}
+
+.page-header>h1,h2{
+    color:white;
+}
+
+.page-header>h1{
+    font-weight: 800 ;
+    font-size: 30px;
+}
+
+.page-header>h2{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header{
+    margin-left:21px;
+    margin-right: 21px;
+    margin-bottom: 80px;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+}
+
+.orange{
+    color:var(--span_orange);
+}
+
+.img-novostavby{
+    width: 319px;
+    height: 134px;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-#menu-toggle{
-    display: none;
+.service >h1{
+    margin-left: 21px;
+    display: flex;
+    align-self: flex-start;
 }
-
-
