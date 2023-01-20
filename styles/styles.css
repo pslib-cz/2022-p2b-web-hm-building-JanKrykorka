@@ -24,13 +24,13 @@ html{
 
 .page{
     
-    background-color: var(--background_white);
+    background-color: white;
 }
 
 .page-nav{
     display: flex;
     margin: 24px 20px 36.5px 20px;
-    background-color: var(--background_white);    /* aqua abych dokázal rozeznat co je co bez kostantního používání devtools*/  
+    background-color: var(--background_white);   
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -41,34 +41,32 @@ html{
     margin-left: -18px;
     display: flex;
     align-self: center;
-
 }
 
 .menu{
-    display:none;
+    display: none;
     flex-direction: row;
+    
     list-style-type: none;
     
 }
 
 .menu > li{
     display: flex;
+    align-items: center ;
     margin: 0 .8rem;
 }
 
 .page-header__img{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     padding-top:179px;
     padding-bottom:20px;
-    background-image:url(../media/pageheader-1920w.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../media/pageheader-1920w.jpg);
     background-position: center;
     background-size:auto 150%;
     background-repeat: no-repeat;
-    padding-left: -20px;
-    padding-right:-20px ;
     margin-bottom: 55px;
 }
 
@@ -110,9 +108,8 @@ html{
     color:var(--spec_orange);
 }
 
-
-
 .service{
+    background-color: white;
     margin: 52px 20px auto 20px;
 }
 
@@ -128,7 +125,7 @@ html{
     margin-bottom: 30px;
 }
 
-.service__img-rd{
+.service__img--rd{
     height: 134px;
     width: 320px;
     border-radius: 0 0 40px 0;
@@ -146,7 +143,7 @@ html{
     margin-bottom: 40px;
 }
 
-.service__img-ld{
+.service__img--ld{
     height: 134px;
     width: 320px;
     border-radius: 0 0 0 40px;
@@ -183,6 +180,35 @@ html{
     background-color: #F5F5F5;
     padding: 20px 48.5px 20px 48.5px;
     margin-bottom: 61px;
-
-
 }
+
+.duvera{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(../media/background-CTAblock-4460w.jpg);
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 58px;
+    padding: 23px 20px 82px 20px;
+}
+
+.duvera>p{
+    color:#F5F5F5;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.duvera>a{
+    color: white;
+    text-decoration: none;
+    background-color: var(--spec_orange);
+    padding: 12px 40px 12px 40px;
+    margin: 0;
+}
+
+.page-header__text .page-header__text--reference>h2{
+    margin-top: 67px;
+}
+
