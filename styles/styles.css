@@ -27,7 +27,7 @@ html{
     background-color: white;
 }
 
-.page-nav{
+.navbar{
     display: flex;
     margin: 24px 20px 36.5px 20px;
     background-color: var(--background_white);   
@@ -36,14 +36,13 @@ html{
     align-items: center;
 }
 
-.img-logo{
-    height: 44px;
+.navbar_logo{
     margin-left: -18px;
     display: flex;
     align-self: center;
 }
 
-.menu{
+/*.menu{
     display: none;
     flex-direction: row;
     
@@ -55,6 +54,25 @@ html{
     display: flex;
     align-items: center ;
     margin: 0 .8rem;
+}
+*/
+@media (max-width: 768px) {
+    .navbar__menu--hidden {
+        display: none;
+    }
+}
+/* hamburger menu */
+.hamburger-menu {
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.75em;
+}
+.hamburger-menu::after {
+    content: url(./media/hamburger.svg);
 }
 
 .page-header__img{
@@ -191,7 +209,9 @@ html{
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 58px;
-    padding: 23px 20px 82px 20px;
+    padding: 1rem;
+    margin-bottom:46px  ;
+
 }
 
 .duvera>p{
@@ -208,7 +228,57 @@ html{
     margin: 0;
 }
 
-.page-header__text .page-header__text--reference>h2{
-    margin-top: 67px;
+.reference-img{
+    width: 320px;
+    height: auto;
 }
+
+
+.reference-gallery{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.reference-gallery__blok{
+    text-align: center;
+
+}
+
+.reference-gallery__blok--hasici{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.reference-gallery__blok--pradelna{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.reference-gallery__blok--plocha{
+    grid-column: 2/3;
+    grid-row: 3;
+}
+
+.reference-gallery__blok>p{
+    margin:6px 0 0 0;
+    padding-bottom:32px;
+}
+
+.reference-button{
+    margin:40px auto  108px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reference-button>a{
+    text-decoration: none;
+    color: #F5F5F5;
+    background-color: #EB6C27;
+    padding: 12px 40px 12px 40px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 
