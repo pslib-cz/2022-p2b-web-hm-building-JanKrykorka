@@ -8,6 +8,70 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 <body>
-    <h1>O NÁS</h1>
+    <div class="page">
+        <nav class="navbar">
+
+            <a href="./index.html" class="navbar__logo">
+                <img src="./media/logo.png" alt="logo" height="44px">
+            </a>
+            
+            <div class="navbar__hamburger">
+                <a class="hamburger-menu" href="javascript:void(0)">menu</a>
+            </div>
+                
+                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">DOMŮ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sluzby.html">SLUŽBY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reference.html">REFERNCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="onas.html">O NÁS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakty.html">KONTAKT</a>
+                    </li>
+                </menu>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
+        <div class="page-header__text">
+            <h2>O NÁS</h2>
+            <p>O nás
+                Společnost HM Building.cz s.r.o. nabízí své služby ve stavebnictví od roku 2015, a to převážně po Libereckém kraji.
+                
+                V oboru pozemního stavitelství provádíme stavbu a rekonstrukci:</p>
+            <ul>
+                <li>průmyslových staveb</li>
+                <li>obytných staveb</li>
+                <li> staveb občanské vybavenosti</li>
+                <li>komunikací vozidlovích, ale i pěších</li>
+            </ul>
+            <p>Zakázky můžeme řešit tzv. na klíč, kde jsme schopni zajistit dodávky a montáž elektroinstalace NN a VN, zdravotně – technické instalace, ústředního vytápění, vzduchotechniky, MaR, případně jsme schopni, po dohodě s investorem, dodat pouze některou ucelenou část celkové zakázky.
+            
+            Naše firma taktéž zajišťuje projekční služby a služby týkající se statického posouzení staveb v oboru pozemního stavitelství a dále jsme schopni zajistit investorsko–inženýrské služby.
+            
+            
+            Záruční doba na námi provedená díla se pohybuje od 24 do 60 měsíců.</p>
+        </div> 
+        <div class="footer">
+            <h2>Plácneme si na váš projekt?</h2>
+            <p>Nezávazně nás kontaktujte a domluvme vše potřebné</p>
+            <a href="#">Nazávazně poptat</a>
+      </div> 
+    </div>
 </body> 
 </html>

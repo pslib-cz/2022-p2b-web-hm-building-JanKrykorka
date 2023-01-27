@@ -32,6 +32,7 @@ html{
 }
 
 .navbar{
+    position: relative;
     display: flex;
     margin: 24px 20px 36.5px 20px;
     background-color: var(--background_white);   
@@ -39,6 +40,42 @@ html{
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.navbar__menu.hamburger-menu-list{
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;flex-direction: column;
+    top: 100%;
+    background-color: var(--spec_orange);
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.navbar__menu.hamburger-menu-list a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+.navbar__menu.hamburger-menu-list::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top:0;
+    transform: translateY(-100%);
+    right: 0;
+    margin-right: calc((46px - 25px) / 2);
+    border:12.5px solid var(--background_white);
+    border-top: none;
+    border-bottom-color: var(--spec_orange);
+    border-bottom-style: solid;
+    border-bottom-width:25px ;
+
 
 }
 
@@ -46,26 +83,9 @@ html{
     margin-left: -14px;
     display: flex;
     align-self: center;
+    height: 53px;
 }
 
-@media (max-width: 768px) {
-    .navbar__menu--hidden {
-        display: none;
-    }
-}
-
-@media (min-width: 800px){
-    .page-header__img{
-        width: 100%;
-        height: auto;
-        background-size:cover ;
-    }
-
-
-
-
-
-}
 /* hamburger menu */
 .hamburger-menu {
     color: inherit;
@@ -74,10 +94,14 @@ html{
     align-items: center;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 0.75em;
+    font-size:10px;
 }
-.hamburger-menu::after {
-    content: url(./media/hamburger.svg);
+
+.navbar__hamburger::after {
+    content: url(../media/hamburger.svg);
+    display: flex;
+    align-items: center ;
+ 
 }
 
 
@@ -114,7 +138,7 @@ html{
     margin-bottom: 80px;
 }
 
-.header__text{
+.page-header__text>p{
     color: black;
     font-size: 14px;
     font-weight: 400;
@@ -154,11 +178,11 @@ html{
     overflow: hidden;
 }
 
-.service__img.service--l{
+.service__img.service--r{
     border-radius: 0 0 40px 0;
 }
 
-.service__img.service--r{
+.service__img.service--l{
     border-radius: 0 0 0 40px;
 }
     
@@ -285,3 +309,8 @@ html{
     margin-bottom: 61px;
 }
 
+
+.page-header__text> ul{
+
+
+}

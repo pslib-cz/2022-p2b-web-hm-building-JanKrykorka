@@ -15,11 +15,7 @@
                 <a href="./index.html" class="navbar__logo">
                     <img src="./media/logo.png" alt="logo" height="44px">
                 </a>
-                
-                <div class="navbar__hamburger">
-                    <a class="hamburger-menu" href="javascript:void(0)">menu</a>
-                </div>
-                    
+
                     <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">DOMŮ</a>
@@ -37,17 +33,12 @@
                             <a class="nav-link" href="kontakty.html">KONTAKT</a>
                         </li>
                     </menu>
+
+                    <div class="navbar__hamburger">
+                        <a class="hamburger-menu" href="javascript:void(0)">menu</a>
+                    </div>
             </nav>
-            <script>
-                const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-                for (const btn of hamburgerButtons) {
-                    btn.onclick = (event) => {
-                        const menus = document.querySelectorAll(".hamburger-menu-list");
-                        for (const menu of menus) {
-                            menu.classList.toggle("navbar__menu--hidden");
-                        }
-                    }
-                }
+
             </script>  
             <div class="page-header__img">
                 <h1>HM Building.cz s.r.o.</h1>
@@ -55,7 +46,7 @@
             </div>
             <div class="page-header__text">
                 <h2>Využijte škálu našich <span class="orange">služeb</span></h2>
-                <p class="header__text">Ačkoli provádíme především <b>průmyslové stavby</b>, není pro nás problém Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.</p>
+                <p>Ačkoli provádíme především <b>průmyslové stavby</b>, není pro nás problém Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.</p>
             </div>
         </div>
         <div class="services">
