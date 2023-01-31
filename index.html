@@ -18,28 +18,37 @@
 
                     <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">DOMŮ</a>
+                            <a class="active" href="index.html">DOMŮ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sluzby.html">SLUŽBY</a>
+                            <a class="" href="sluzby.html">SLUŽBY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="reference.html">REFERNCE</a>
+                            <a class="" href="reference.html">REFERNCE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="onas.html">O NÁS</a>
+                            <a class="" href="onas.html">O NÁS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="kontakty.html">KONTAKT</a>
+                            <a class="" href="kontakty.html">KONTAKT</a>
                         </li>
                     </menu>
 
                     <div class="navbar__hamburger">
                         <a class="hamburger-menu" href="javascript:void(0)">menu</a>
                     </div>
-            </nav>
-
-            </script>  
+                    <script>
+                        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+                        for (const btn of hamburgerButtons) {
+                            btn.onclick = (event) => {
+                                const menus = document.querySelectorAll(".hamburger-menu-list");
+                                for (const menu of menus) {
+                                    menu.classList.toggle("navbar__menu--hidden");
+                                }
+                            }
+                        }
+                    </script>
+            </nav> 
             <div class="page-header__img">
                 <h1>HM Building.cz s.r.o.</h1>
                 <p>Liberecká stavební společnost</p>
@@ -58,7 +67,7 @@
             <div class="service__text service--r">
                 <h3>Novostavby</h3>
                 <p>Dle požadavků investora jsme schopní dodat <b>kompletní stavbu na klíč</b>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci. <br> <br> Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
-                <a class="service__btn" href="#">Zobrazit více</a>
+                <a class="service__btn" href="novostaby.html">Zobrazit více</a>
             </div>
 
             <div class="service__img service--r">
@@ -101,13 +110,13 @@
                 <p class="header__text">Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavebnictví</b>. To, že <b>obrátit se na právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
             </div>
             <div class="reference-gallery">
-                <div class="reference-gallery__blok reference-gallery__blok--hasici">
-                    <img class="reference-img" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="hasičská zbrojnice">
-                    <h2>Hasičská zbrojnice</h2>
-                    <p>celková rekonstrukce</p>    
+                <div class="reference-gallery__blok reference-gallery__blok--hasici ">
+                    <a href="#"><img class="reference-img" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="hasičská zbrojnice"></a>
+                        <h2>Hasičská zbrojnice</h2>
+                        <p>celková rekonstrukce</p>   
                 </div>
-                <div class="reference-gallery__blok reference-gallery__blok--pradelna">
-                    <img class="reference-img" src="./media/reference/reference-pradelna-600w.jpg" alt="stavební úpravy prádelny">
+                <div class="reference-gallery__blok reference-gallery__blok--pradelna ">
+                    <img class="reference-img " src="./media/reference/reference-pradelna-600w.jpg" alt="stavební úpravy prádelny">
                     <h2>Samooobslužná prádelna</h2>
                     <p>stavební úpravy a opravy</p>
                 </div>

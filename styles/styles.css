@@ -32,6 +32,7 @@ html{
 }
 
 .navbar{
+    
     position: relative;
     display: flex;
     margin: 24px 20px 36.5px 20px;
@@ -56,8 +57,23 @@ html{
 
 .navbar__menu.hamburger-menu-list a{
     text-decoration: none;
+    text-underline-offset: 5px;
     color: inherit;
+}
 
+.navbar__menu.hamburger-menu-list.navbar__menu--hidden{
+    
+display: none;
+}
+
+.active{
+    font-weight: 600;
+}
+
+.navbar__menu.hamburger-menu-list li{
+    list-style:none;
+    color: #F5F5F5;
+    text-decoration: underline;
 }
 
 
@@ -77,6 +93,29 @@ html{
     border-bottom-width:25px ;
 
 
+}
+
+@media (min-width: 1400px) {
+    .hamburger-menu{ 
+        display: flex;
+    } 
+    .navbar__menu--hidden {
+        z-index: -1;
+    }
+
+    .navbar__hamburger .hamburger-menu{
+        display: none;
+    }
+
+    nav{
+        margin: 40px;
+
+    }
+}
+
+
+.navbar__menu--hidden{
+    display: none;
 }
 
 .navbar__logo >img{
@@ -112,10 +151,11 @@ html{
     padding-top:179px;
     padding-bottom:20px;
     background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../media/pageheader-1920w.jpg);
-    background-position: center;
-    background-size:auto 150%;
-    background-repeat: no-repeat;
     margin-bottom: 55px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -138,13 +178,31 @@ html{
     margin-bottom: 80px;
 }
 
+.page-header__text>h2{
+    font-weight:900;
+}
+
+.page-header__text>ul ,.page-header__text>ul ul {
+    padding-left:21px ;
+    list-style: none;
+}
+
+.page-header__text> ul li::before, .page-header__text>ul li li::before{
+    content: "\2022";
+    color: var(--spec_orange);
+    font-weight: 900;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
 .page-header__text>p{
     color: black;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     text-align: left;
-    margin-bottom: 80px;
 }
 
 .orange{
@@ -229,13 +287,15 @@ html{
     margin: 0;
 }
 
+
 .reference-img{
-    width:60vw;
+    width: 100%;
     height: auto;
 }
 
 
 .reference-gallery{
+    margin-top: 2em;
     display: grid;
     grid-template-columns: 20px 1fr 20px;
     grid-template-rows:1fr 1fr 1fr;
@@ -255,6 +315,13 @@ html{
 .reference-gallery__blok--pradelna{grid-area: pradelna;}
 
 .reference-gallery__blok--plocha{grid-area: plocha ;}
+
+.reference-gallery__blok:hover{
+    background: linear-gradient(rgba(235, 108, 39, 100)100%);
+
+}
+
+
 
 .reference-gallery__blok>p{
     margin:6px 0 0 0;
@@ -278,6 +345,7 @@ html{
 }
 
 .footer{
+    margin-bottom: 50px;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -307,10 +375,4 @@ html{
     background-color: #F5F5F5;
     padding: 20px 48.5px 20px 48.5px;
     margin-bottom: 61px;
-}
-
-
-.page-header__text> ul{
-
-
 }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body>
+    <div class="page-header">
+        <nav class="navbar">
+
+            <a href="./index.html" class="navbar__logo">
+                <img src="./media/logo.png" alt="logo" height="44px">
+            </a>
+
+                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                    <li>
+                        <a class="" href="index.html">DOMŮ</a>
+                    </li>
+                    <li>
+                        <a class="" href="sluzby.html">SLUŽBY</a>
+                    </li>
+                    <li>
+                        <a class="active" href="reference.html">REFERNCE</a>
+                    </li>
+                    <li>
+                        <a class="" href="onas.html">O NÁS</a>
+                    </li>
+                    <li>
+                        <a class="" href="kontakty.html">KONTAKT</a>
+                    </li>
+                </menu>
+
+                <div class="navbar__hamburger">
+                    <a class="hamburger-menu" href="javascript:void(0)">menu</a>
+                </div>
+                <script>
+                    const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+                    for (const btn of hamburgerButtons) {
+                        btn.onclick = (event) => {
+                            const menus = document.querySelectorAll(".hamburger-menu-list");
+                            for (const menu of menus) {
+                                menu.classList.toggle("navbar__menu--hidden");
+                            }
+                        }
+                    }
+                </script>
+        </nav> 
+        <div class="page-header__text">
+            <h2>
+                Reference
+            </h2>
+            <p>
+                Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavenictví</b>. 
+                To, že <b>orátit se na  právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.
+            </p>
+        </div>
+            <div class="reference">
+                <div class="reference-gallery">
+                    <div class="reference-gallery__blok reference-gallery__blok--hasici ">
+                        <img class="reference-img" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="hasičská zbrojnice">
+                            <h2>Hasičská zbrojnice</h2>
+                            <p>celková rekonstrukce</p>   
+                    </div>
+                    <div class="reference-gallery__blok reference-gallery__blok--pradelna ">
+                        <img class="reference-img " src="./media/reference/reference-pradelna-600w.jpg" alt="stavební úpravy prádelny">
+                        <h2>Samooobslužná prádelna</h2>
+                        <p>stavební úpravy a opravy</p>
+                    </div>
+                    <div class="reference-gallery__blok reference-gallery__blok--plocha">
+                        <img class="reference-img" src="./media/reference/reference-plocha-600w.jpg" alt="provedení venkovních ploch">
+                        <h2>Venkovní plochy Restyl</h2>
+                        <p>provedení venkovních ploch</p>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</body>
+</html>
