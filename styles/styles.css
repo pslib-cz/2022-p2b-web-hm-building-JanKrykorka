@@ -35,7 +35,7 @@ html{
     
     position: relative;
     display: flex;
-    margin: 24px 20px 36.5px 20px;
+    margin: 24px 1.5em 36.5px 1.5em;
     background-color: var(--background_white);   
     justify-content: space-between;
     flex-direction: row;
@@ -62,8 +62,7 @@ html{
 }
 
 .navbar__menu.hamburger-menu-list.navbar__menu--hidden{
-    
-display: none;
+    display: none;
 }
 
 .active{
@@ -173,8 +172,8 @@ display: none;
 }
 
 .page-header__text{
-    margin-left:21px;
-    margin-right: 21px;
+    margin-left:1.5em;
+    margin-right: 1.5em;
     margin-bottom: 80px;
 }
 
@@ -211,7 +210,7 @@ display: none;
 
 .services{
     background-color: white;
-    margin: 52px 20px auto 20px;
+    margin: 52px 1.5em auto 1.5em;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: .5rem;
@@ -297,7 +296,7 @@ display: none;
 .reference-gallery{
     margin-top: 2em;
     display: grid;
-    grid-template-columns: 20px 1fr 20px;
+    grid-template-columns: 1.5em 1fr 1.5em;
     grid-template-rows:1fr 1fr 1fr;
     grid-template-areas: 
     ". hasici ."
@@ -339,13 +338,13 @@ display: none;
     text-decoration: none;
     color: #F5F5F5;
     background-color: #EB6C27;
-    padding: 12px 40px 12px 40px;
+    padding: 1em 40px 1em 40px;
     font-size: 14px;
     font-weight: 700;
 }
 
 .footer{
-    margin-bottom: 50px;
+
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -373,6 +372,29 @@ display: none;
     text-decoration-line: none;
     color:var(--spec_orange);
     background-color: #F5F5F5;
-    padding: 20px 48.5px 20px 48.5px;
-    margin-bottom: 61px;
+    padding: 1.5em 48.5px 1.5em 48.5px;
+    margin-bottom: 48px;
+    font-weight: 800;
+}
+
+
+.gallery{
+    display:  grid;
+    grid-template-columns: 1.5em 1fr 1.5em;
+    grid-template-rows: auto;
+    grid-template-areas: 
+     ". photos . "
+    ;
+}
+
+.gallery-photos{  
+    grid-area: photos;
+    display:  grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 21;
+    gap: 1.5em; ;
+}
+.img-gallery{
+    width: 100%;
+    height: auto;
 }
