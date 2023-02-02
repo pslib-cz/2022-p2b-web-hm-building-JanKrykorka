@@ -58,13 +58,46 @@
                 <p><span class="orange">stavby@hm-building.cz</span></p>
                 <p><span class="orange">Křižanská 12, Liberec XXII-Horní Suchá</span></p>
             </div>
+
             <div class="page-map">
                 <img class="img-rsp " src="./media/mapa.jpg" alt="mapa kde se hm building nachází">
-            </div>        
-            <div class="forms">
-
             </div>
-        </div>
+
+            <div class="page-header__text">
+                <h2>Nezávazná poptávka</h2>
+                <p>Plácneme si na Váš projekt? Nezávazně nás kontaktujte a domluvne vše potřebné</p>
+            </div>
+
+            <form class="forms">
+                <div class="form__input">
+                    <label for="name">Jméno a Příjmení</label><br>
+                    <input type="text" id="name" name="name"><br>
+                </div>
+                <div class="form__input">
+                    <label for="email"> E-mail</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </div>
+                <div class="form__input">
+                    <label for="phone-num">Telefon</label><br>
+                    <input type="number" id="phone-num" name="phone-num"><br>
+                </div>    
+                <div class="form__input">
+                    <label for="service">Poptávaná služba</label><br>
+                    <select id="service" name="service">
+                        <option value="0">-- Vyberte --</option>
+                        <option value="1">Novostavba</option>
+                        <option value="2">Průmyslová stavba</option>
+                        <option value="3">Rekonstrukce</option>
+                        <option value="4">Komunikace a zpevněné plochy</option>
+                        <option value="5">Ostatní</option>
+                    </select>
+                </div>
+                <div class="form__input">
+                    <label for="message">Poznámka</label><br>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+            </form>
+            </div>
         <div class="footer">
             <h2>Plácneme si na váš projekt?</h2>
             <p>Nezávazně nás kontaktujte a domluvme vše potřebné</p>
