@@ -178,12 +178,14 @@ html{
 
 .page-header__text>p{
     color: black;
-    font-size: 14px;
+    font-size: .9em;
     font-weight: 400;
     line-height: 17px;
     text-align: left;
 }
-
+.page-header__text> ul li, .page-header__text>ul li li{
+    font-size: .9em;
+}
 .orange{
     color:var(--spec_orange);
 }
@@ -377,7 +379,32 @@ html{
     margin: 2em auto 2em auto;
 }
 
+.kontakty-links span::before {
+    display: block;
+    margin-right: 20px;
+    content: "";
+    background-image: url(../media/svg/mail_24px.svg);
+    background-color: var(--spec_orange);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.kontakty-links span:first-of-type:before {
+    background-image: url(../media/svg/local_phone_24px.svg);
+}
+.kontakty-links span:last-of-type::before {
+    background-image: url(../media/svg/room_24px.svg);
+}
+.kontakty-links span{
+    display: flex;
+    align-items: center
+}
+
 .kontakty{
+    background-color: white;
     display: grid;
     grid-template-columns: 1.5em 1fr 1.5em;
     grid-template-rows: auto;
@@ -390,7 +417,11 @@ html{
 
 }
 
-.kontakty-links{ grid-area: links;}
+.kontakty-links{ 
+    grid-area: links;
+    display: flex;
+    flex-flow: column;
+}
 .page-map{grid-area: mapa;}
 .forms{grid-area: forms;}
 
@@ -550,5 +581,8 @@ form select:focus{
         "hasici pradelna plocha"   
         ;
     }
+    .page-header__text> ul li, .page-header__text>ul li li{
+        font-size: 1.5em ;
+    } 
 
 }
