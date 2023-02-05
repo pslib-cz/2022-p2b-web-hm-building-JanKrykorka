@@ -615,18 +615,59 @@ form select:focus{
         font-size: 1.5em;       
     }
 
+
+
     .reference-gallery{
         margin-top: 2em;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns:1em  1fr 1fr 1fr 1em;
         grid-template-rows:1fr;
         gap: 1em;
         grid-template-areas: 
-        "hasici pradelna plocha"   
+        ". hasici pradelna plocha . "   
         ;
     }
     .page-header__text> ul li, .page-header__text>ul li li{
         font-size: 1.5em ;
     } 
+    
+    .footer>h2{
+        font-size: 3em;
+    }
+
+    .footer>p{
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .footer>a{
+        font-size: 1.5em;
+    }
+
+    .left p{
+        text-align: left;
+    }
+
+    .img-rsp{
+        width: 100%;
+            height: auto; 
+    }
+
+    .gallery{
+        width: auto;
+    display:  grid;
+    grid-template-columns: 6em 1fr 6em;
+    grid-template-rows: auto;
+    grid-template-areas: 
+     ". photos . "
+    ;
+    }
+
+    .gallery-photos{  
+        grid-area: photos;
+        display:  grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: 21;
+        gap: 1.5em; 
+    }
 
 }
