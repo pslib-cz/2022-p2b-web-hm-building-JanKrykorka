@@ -372,8 +372,10 @@ html{
     gap: 1.5em; ;
 }
 .img-rsp{
+    display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .page-map{
@@ -647,27 +649,26 @@ form select:focus{
         text-align: left;
     }
 
-    .img-rsp{
-        width: 100%;
-            height: auto; 
-    }
 
     .gallery{
         width: auto;
-    display:  grid;
-    grid-template-columns: 6em 1fr 6em;
-    grid-template-rows: auto;
-    grid-template-areas: 
-     ". photos . "
-    ;
+        display:  grid;
+        grid-template-columns: 3em 1fr 3em;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        ". photos . "
+        ;
     }
 
     .gallery-photos{  
         grid-area: photos;
         display:  grid;
         grid-template-columns:repeat(3, 1fr);
-        grid-template-rows: 21;
-        gap: 1.5em; 
+        grid-template-rows: 21; 
+    }
+
+    .gallery-photos figure{
+        margin: 0;
     }
 
 }
