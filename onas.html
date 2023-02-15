@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 <body>
-    <div class="page">
+    <header>
         <nav class="navbar">
 
             <a href="./index.html" class="navbar__logo">
@@ -30,17 +30,17 @@
                     <a class="" href="reference.html">REFERNCE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="" href="onas.html">O NÁS</a>
+                    <a class="active" href="onas.html">O NÁS</a>
                 </li>
                 <li class="nav-item">
                     <a class="" href="kontakty.html">KONTAKT</a>
                 </li>
             </menu>
         </nav>
-        <div class="page-header__img">
-            <h1>HM Building.cz s.r.o.</h1>
-            <p>Liberecká stavební společnost</p>
-        </div>
+    </header>
+    <div class="page-header__img">
+        <h1>HM Building.cz s.r.o.<br><span class="podnadpis">liberecká stavební společnost</span></h1>
+    </div>
         <script>
             const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
             for (const btn of hamburgerButtons) {
@@ -71,11 +71,11 @@
             
             <br><br><b>Záruční doba</b> na námi provedená díla se pohybuje od 24 do 60 měsíců.</p>
         </div> 
-        <div>
+        <footer>
             <h2>Plácneme si na váš projekt?</h2>
             <p>Nezávazně nás kontaktujte a domluvme vše potřebné</p>
-            <a href="kontakty.html">Nazávazně poptat</a></div>
-      </div> 
-    </div>
+            <a href="kontakty.html">Nazávazně poptat</a>
+        </footer>
+    
 </body> 
 </html>

@@ -138,17 +138,23 @@ html{
     
 }
 
+.page-header__img{
+    text-align: center;
+}
+
 .page-header__img>h1{
     color: #F5F5F5;
     font-weight: 800 ;
     font-size: 30px;
     font-family: Open-Sans-Extra-Thicc;
+    margin-bottom:0.5em  ;
 }
 
-.page-header__img>p{
+.podnadpis{
     color:#F5F5F5;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 0.5em;
+    font-family: Open-Sans;
 }
 
 .page-header__text{
@@ -158,7 +164,7 @@ html{
     margin-bottom: 80px;
 }
 
-.page-header__text>h2{
+.page-header__text>h2, .not_heading_heading{
     font-weight:900;
 }
 
@@ -194,22 +200,18 @@ html{
 .services{
     background-color: white;
     margin: 52px 1.5em auto 1.5em;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: .5rem;
-    grid-template-rows: auto ;
+
 }
 
 .service>h3{
     font-weight:700 ;
-    font-size: 20px;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 .service>p{
-    font-size: 14px;
+    font-size: 1.5em;
     margin: 0;
-    ;
 }
 
 .service__img{
@@ -218,11 +220,11 @@ html{
     overflow: hidden;
 }
 
-.service__img.service--r{
+.service__img.service--l{
     border-radius: 0 0 40px 0;
 }
 
-.service__img.service--l{
+.service__img.service--r{
     border-radius: 0 0 0 40px;
 }
     
@@ -249,7 +251,6 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 58px;
     padding: 1rem;
     margin-bottom:46px  ;
 
@@ -258,7 +259,7 @@ html{
 .duvera>p{
     color:#F5F5F5;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.7em;
 }
 
 .btn--orange-bg{
@@ -316,11 +317,11 @@ html{
     color: #F5F5F5;
     background-color: #EB6C27;
     padding: 1em 40px 1em 40px;
-    font-size: 14px;
+    font-size: 1.7em;
     font-weight: 700;
 }
 
-.footer{
+footer{
 
     margin-top: 80px;
     display: flex;
@@ -330,22 +331,22 @@ html{
     color: #F5F5F5;
 }
 
-.footer>h2{
+footer>h2{
     padding-top: 66px;
     padding-bottom: 26px;
-    font-size: 22px;
+    font-size: 2em;
 }
 
-.footer>p{
+footer>p{
     margin: 0;
     text-align: center;
     padding-bottom: 26px;
     margin: auto 36px auto 36px;
-    font-size: 15px;
+    font-size: 1.4em;
     font-weight: 400;
 }
 
-.footer>a{
+footer>a{
     text-decoration-line: none;
     color:var(--spec_orange);
     background-color: #F5F5F5;
@@ -542,23 +543,29 @@ form select:focus{
         display: none;
     }
 
+    .page-header__img{
+        text-align: center;
+    }
 
     .page-header__img>h1{
         margin-top: 2em;
         font-size: 7em;
     }
 
-    .page-header__img>p{
+    .podnadpis{
+        font-family: Open-Sans;
         margin: 0;
-        font-size:2em ;
+        font-size:0.5em ;
         margin-bottom: 2em;
+        text-align: center;
+        font-weight: 200;
     }
 
     .page-header__text{
         margin: auto 15em auto 15em ;
     }
 
-    .page-header__text>h2{
+    .page-header__text>h2, .not_heading_heading{
         font-size: 3rem;
         text-align: center;
     }
@@ -670,5 +677,14 @@ form select:focus{
     .gallery-photos figure{
         margin: 0;
     }
+
+    .services{
+        margin:  5rem;
+    }
+
+    .btn--orange-bg::after{
+        content: " ↓";
+    }
+
 
 }
