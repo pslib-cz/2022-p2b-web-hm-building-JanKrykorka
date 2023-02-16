@@ -249,11 +249,11 @@ header a.btn--orange-bg{
 .service__btn{
     color: var(--spec_orange);
     padding: 12px 40px 12px 40px;
-    font-size: 14px;
+    font-size: 1em;
     border-radius: 2px;
     border-style: dashed;
     text-decoration-line: none;
-    margin-bottom: 40px;
+    margin-bottom: 3em;
 }
 
 
@@ -357,7 +357,7 @@ footer>p{
     text-align: center;
     padding-bottom: 2em;
     margin: auto 2em auto 2em;
-    font-size: 4em;
+    font-size: 1em;
     font-weight: 400;
 }
 
@@ -369,7 +369,7 @@ footer>a{
     padding: 1em;
     margin-bottom: 4em;
     font-weight: 800;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 
