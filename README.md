@@ -3,8 +3,8 @@ Odkaz na [moji stranku](https://pslib-cz.github.io/2022-p2b-web-hm-building-JanK
 TODO:
 • „Využijte školu našich služeb“ v index není nadpis, ale odstavec textu => posun úrovní nadpisů [done]
 • Kromě <div> existuje i main, header, footer, section...[done]
-• Display flex pro nepárový tag <img> je nonsense. Asi jste chtěl display block/inline-block
-• Každý samostatný <a> button/cta má být buď display block nebo inline-block
+• Display flex pro nepárový tag <img> je nonsense. Asi jste chtěl display block/inline-block[done]
+• Každý samostatný <a> button/cta má být buď display block nebo inline-block [done]
 • Strukuta html v .services je nevhodně členěna (obrázek patří k textové části, mají mít společný
 kontejner)
 • Použití gridu je pak v .services zbytečné [done]
