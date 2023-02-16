@@ -35,7 +35,7 @@ html{
     
     position: relative;
     display: flex;
-    margin: 24px 1.5em 36.5px 1.5em;
+    margin: 24px 1em 36.5px 1em;
     background-color: var(--background_white);   
     justify-content: space-between;
     flex-direction: row;
@@ -57,6 +57,7 @@ html{
 }
 
 .navbar__menu.hamburger-menu-list a{
+    display: block;
     text-decoration: none;
     text-underline-offset: 5px;
     color: inherit;
@@ -97,6 +98,10 @@ html{
     display: none;
 }
 
+header a.btn--orange-bg{
+    display: none;
+}
+
 .navbar__logo >img{
     margin-left: -14px;
     display: flex;
@@ -104,7 +109,6 @@ html{
     height: 53px;
 }
 
-/* hamburger menu */
 .hamburger-menu {
     color: inherit;
     display: flex;
@@ -124,18 +128,20 @@ html{
 
 
 .page-header__img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top:179px;
-    padding-bottom:20px;
+    display: block;
+    padding-top:7.5em;
+    padding-bottom:2em;
     background:linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../media/pageheader-1920w.jpg);
-    margin-bottom: 55px;
+    margin-bottom: 4em;
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
+}
+
+.not_heading_heading{
+    font-size: 1.5em;
 }
 
 .page-header__img{
@@ -161,10 +167,10 @@ html{
     grid-area: -text;
     margin-left:1.5em;
     margin-right: 1.5em;
-    margin-bottom: 80px;
+    margin-bottom: 5em;
 }
 
-.page-header__text>h2, .not_heading_heading{
+.page-header__text>h2, .not_heading_heading {
     font-weight:900;
 }
 
@@ -183,6 +189,8 @@ html{
 }
 
 
+
+
 .page-header__text>p{
     color: black;
     font-size: .9em;
@@ -199,8 +207,14 @@ html{
 
 .services{
     background-color: white;
-    margin: 52px 1.5em auto 1.5em;
+    margin: 52px 1.5em 4em 1.5em;
 
+}
+
+.page-header__text>figcaption{
+    font-size: 3em;
+    text-align: center;
+    font-weight: 900;
 }
 
 .service>h3{
@@ -214,21 +228,21 @@ html{
     margin: 0;
 }
 
-.service__img{
+.service__block--img{
     max-height: 40vw;
     margin-top:40px;
     overflow: hidden;
 }
 
-.service__img.service--l{
+.service__block--img.service--l{
     border-radius: 0 0 40px 0;
 }
 
-.service__img.service--r{
+.service__block--img.service--r{
     border-radius: 0 0 0 40px;
 }
     
-.service__img>img{
+.service__block--img>img{
     max-width: 100%;
 }
 
@@ -313,6 +327,7 @@ html{
 }
 
 .reference-button>a{
+    display: block;
     text-decoration: none;
     color: #F5F5F5;
     background-color: #EB6C27;
@@ -322,8 +337,7 @@ html{
 }
 
 footer{
-
-    margin-top: 80px;
+    margin-top: 2.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,28 +345,31 @@ footer{
     color: #F5F5F5;
 }
 
-footer>h2{
-    padding-top: 66px;
-    padding-bottom: 26px;
+footer>span{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: .5em;
     font-size: 2em;
 }
 
 footer>p{
     margin: 0;
     text-align: center;
-    padding-bottom: 26px;
-    margin: auto 36px auto 36px;
-    font-size: 1.4em;
+    padding-bottom: 2em;
+    margin: auto 2em auto 2em;
+    font-size: 4em;
     font-weight: 400;
 }
 
 footer>a{
+    display: block;
     text-decoration-line: none;
     color:var(--spec_orange);
     background-color: #F5F5F5;
-    padding: 1.5em 48.5px 1.5em 48.5px;
-    margin-bottom: 48px;
+    padding: 1em;
+    margin-bottom: 4em;
     font-weight: 800;
+    font-size: 2em;
 }
 
 
@@ -435,7 +452,7 @@ form{
 }
 form p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.2em;
     margin-bottom: 2em;
     margin-top: 0;
 }
@@ -482,6 +499,7 @@ form select:focus{
     outline-color: var(--spec_orange);
 }
 .form__group a{
+    display: block;
     width: 200px;
     font-size: 0.8em;
 }
@@ -491,6 +509,11 @@ form select:focus{
 
 @media (min-width: 1080px) {
     
+    header a.btn--orange-bg{
+        display: inline-block;
+    }
+
+
     .navbar__menu.hamburger-menu-list{
         position: static;
     }
@@ -587,6 +610,10 @@ form select:focus{
 		grid-gap: 6em 4em;
 		justify-content: center;
     }
+    .service__block{
+        display:block;
+        width: 100%;
+    }
 
 
     .service--l{
@@ -598,7 +625,7 @@ form select:focus{
         grid-column: 2;
     }
 
-    .service__img{
+    .service__block--img{
         margin-top: 0;
 		max-height: 307px;
 		overflow: hidden;
@@ -613,10 +640,12 @@ form select:focus{
     }
 
     .service>a{
+        display: block;
         margin-top: 2em;
     }
 
     .duvera{
+        margin-top: 5em;
         padding: 10em;
     }
 
@@ -640,15 +669,18 @@ form select:focus{
         font-size: 1.5em ;
     } 
     
-    .footer>h2{
+    footer>h2{
+        text-align: center;
         font-size: 3em;
     }
 
-    .footer>p{
+    footer>p{
+        text-align: center;
         font-size: 1em;
         font-weight: 300;
     }
-    .footer>a{
+    footer>a{
+        display: block;
         font-size: 1.5em;
     }
 
