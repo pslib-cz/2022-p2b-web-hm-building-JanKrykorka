@@ -217,15 +217,17 @@ header a.btn--orange-bg{
     font-weight: 900;
 }
 
-.service>h3{
+.service h3{
     font-weight:700 ;
     font-size: 2em;
-    margin-bottom: 10px;
+    padding-top: 1em;
+    margin-bottom: .5em;
 }
 
-.service>p{
+.service p{
     font-size: 1.5em;
     margin: 0;
+    padding-bottom: 2em;
 }
 
 .service__block--img{
@@ -610,10 +612,13 @@ form select:focus{
 		grid-gap: 6em 4em;
 		justify-content: center;
     }
+
+    /*
     .service__block{
-        display:block;
-        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
+    */
 
 
     .service--l{
