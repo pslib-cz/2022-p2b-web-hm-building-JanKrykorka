@@ -1,9 +1,7 @@
 Odkaz na [moji stranku](https://pslib-cz.github.io/2022-p2b-web-hm-building-JanKrykorka/)
 
 TODO: 
-• <br><br> je citoslovce vyjádření zimy, na webu nemá co dělat [blbost]
-• Strukuta html v .services je nevhodně členěna (obrázek patří k textové části, mají mít společný
-kontejner) [blbost]
+
 
 DONE:
 • „Využijte školu našich služeb“ v index není nadpis, ale odstavec textu => posun úrovní nadpisů [done]
@@ -16,3 +14,7 @@ DONE:
 • Obsah webu strukturujte – využívejte <section> pro vyznačení sekcí (oddílů) stránky => sekce se službami, referencemi, ... [done]
 • V .reference-gallery není nadpis (h2), maximálně figure–figcaption[done]
 • Padding, margin, font-size nastavujte v em jednotkách     [done]
+
+• <br><br> je citoslovce vyjádření zimy, na webu nemá co dělat [done]
+• Strukuta html v .services je nevhodně členěna (obrázek patří k textové části, mají mít společný
+kontejner) [done]
